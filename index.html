@@ -1,16 +1,60 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
-	<head>
-		<title>Scala Email Signature Generator Form</title>
-		<meta charset="UTF-8">
-		<meta name="viewport" content="initial-scale=1.0">
-        
-        <link rel="stylesheet" type="text/css" href="stylesheets/normalize.css">
-        <link rel="stylesheet" type="text/css" href="stylesheets/main.css">
-        
-	</head>
+<head>
+    <meta charset="UTF-8">
+    <title>Scala Email Signature Generation Form</title>
+    <meta name="viewport" content="width=device-width">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+    <link rel="stylesheet" href="css/style.css">
 
-	<body>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
 
-	</body>
+</head>
+
+<body>
+    <div class="container" >
+        <img id="header-img" src="images/scala-logo@2x.png">
+        <h2>Email Signature Generator</h2>
+        <!--img src="images/email-sig-screenshot.png"-->
+        <form class="form" action="#">
+            <fieldset class="form-fieldset ui-input __first">
+                <input type="text" id="yourname" tabindex="0" />
+                <label for="yourname">
+                    <span data-text="First &#38 Last Name">First &#38 Last Name</span>
+                </label>
+            </fieldset>
+
+            <fieldset class="form-fieldset ui-input __second">
+                <input type="text" id="jobtitle" tabindex="0" />
+                <label for="jobtitle">
+                    <span data-text="Job Title">Job Title</span>
+                </label>
+            </fieldset>
+
+            <fieldset class="form-fieldset ui-input __third">
+                <input type="text" id="phonenumber" />
+                <label for="phonenumber">
+                    <span data-text="Phone Number">Phone Number</span>
+                </label>
+            </fieldset>
+
+            <fieldset class="form-fieldset ui-input __fourth">
+                <input type="text" id="emailaddress" />
+                <label for="emailaddress">
+                    <span data-text="Email Address">Email Address</span>
+                </label>
+            </fieldset>
+
+            <div class="form-footer">
+                <button class="btn">Make my signature</button>
+            </div>
+        </form>
+    </div>
+    
+    <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+    
+
+    <script  src="js/index.js"></script>
+
+</body>
 </html>
